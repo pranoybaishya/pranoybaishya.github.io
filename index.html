@@ -1,0 +1,175 @@
+
+
+<html>
+	<head>
+		<style type="text/css">
+			body{font-family: sans-serif;}
+			p{display: inline-block;}
+			img{display: block;}
+			.container{width: 90%;position absolute;margin: auto;}
+			.title{position: relative;width: 90%;margin: auto;text-align: center;font-weight: bold;font-size: 18px;padding: 1%;}
+			.section{position: relative;width: 90%;margin: auto;padding: 2%;}
+			.subsection{position: relative; width: 98%;text-align: justify;padding: 10px;}
+			.heading{position: relative; width: 98%;text-align: left;font-size: 14px;font-weight: bold;}
+			.text{width: 95%;font-size: 12px;text-align: justify;padding: 10px 0px 10px 0px;}
+			.authors{position: relative;width: 80%;margin: auto;padding: 2%;font-style: italic;text-align: center;font-size: 12px;}
+			.image{width: 95%;font-size: 12px;text-align: left;}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="title">Gender Recognition through Speech Analysis</div>
+
+			<div class="authors">
+
+				<!-- Start edit here  -->
+				<p>Puneet Jangpangi, Roll No.: 150108025, Branch: EEE</p>; &nbsp; &nbsp;
+				<p>Pranoy Baishya, Roll No.: 150102052, Branch: ECE</p>; &nbsp; &nbsp;
+
+				<!-- Stop edit here -->
+
+			</div>
+
+
+			<div class="section">
+				<div class="heading">Abstract</div>
+				<div class="text">
+
+					<!-- Start edit here  -->
+					Gender classification through speech analysis aims at predicting the gender of the speaker from a given speech sample. In the field of signal analysis, this particular topic of interest has become a hot choice for  research and development among scientists. The human voice consists of various parameters through which a analytical prediction can be made about the gender of the speaker.In this project, we have tried to do the same by mainly focusing on Autocorrelation factors and creating a threshold frequency for both male and female voices in a Matlab program.
+
+				</div>
+			</div>
+
+			<div class="section">
+				<div class="heading">1. Introduction</div>
+				<div class="text">
+
+					<!-- Start edit here  -->
+The voice information stored in the speech signal not only delivers a message but also hints at many properties such as age,gender,region of the speaker.In the field of technology gender detection has many applications .
+                    We know that Male has the  fundermental frequencies & spectral formant frequencies lower than the female.  Pitch is also a important feature which can  be obtained to study the voice in both time domain and frequency domain.  The speech waveform is directly analyzed and the methods like short time autocorrelation, modified autocorrelation through clipping technique, normalized cross correlation function, average magnitude difference function, square difference function etc. are used. <!-- Stop edit here -->
+
+				</div>
+
+				<div class="subsection">
+					<div class="heading">1.1 Introduction to Problem</div>
+					<div class="text">
+
+						<!-- Start edit here  -->
+In the field signal analysis Gender Recognition from speech is a very important	field of reasearch.Gender Classification through speech actually aims at detecting the Gender of a particular speaker. Its also a small step towards Artificial Intelligence					<!-- Stop edit here -->
+
+					</div>
+				</div>
+
+				<div class="subsection">
+					<div class="heading">1.2 Figure</div>
+					<div class="image">
+
+						<!-- Start edit here  -->
+						<img src="block.jpg" alt="This text displays when the image is umavailable" width="600px" height=""/>
+						<!-- Stop edit here -->
+
+					</div>
+				</div>
+				<div class="subsection">
+					<div class="heading">1.3 Literature Review</div>
+					<div class="text">
+
+						<!-- Start edit here  -->
+With the enhancement in science and technology, speech recognition techniques have become a more efficient alternatives in the market for various applications and softwares where typing becomes tougher.It has also found a place in various security practices.Also with the growth in the emerging embedded computing platforms, Speech Recognition Systems have become a demand of the hour.This technology is cheap and accessible and powerful as well. 						<!-- Stop edit here -->
+
+					</div>
+				</div>
+				<div class="subsection">
+					<div class="heading">2. Proposed Approach</div>
+					<div class="text">
+
+						<!-- Start edit here  -->
+                        <div class="heading">Using Pitch to classify Gender
+</div>
+                        Pitch period is defined as the time interval  between two consecutive voiced excitation cycles.Its basically the fundermental frequency of the voiced samples.This process of fundermental frequency detection is also known as Pitch Detection.The reason behind using this method is that the average fundermental frequency for a adult man is 85-185 Hz and that for a woman is 165-200 Hz.But there are several challenges of using this method as it works well distinguishably only with non noisy speech samples.Also at some particular frequencies both male and female voices co-exist. However,Generally females posses  higher fundermental frequencies than men.So this method of practice have been adopted in this experimentation.
+
+
+
+                        <div class="heading">Modiefied Autocorrelation Method</div>
+                        This method is based on the finding the highest value of Autocorrelation function.The autocorrelation of a periodic signal is periodic but since voice samples are not periodic,we have to divide the speech signal into small frames and then apply short time autocorrelation function for all frames and calculate pitch for every frame and then get the average pitch from all the frames.This can be easily processed in MATLAB through its built in command
+
+                        <div class="subsection">
+					<div class="heading">r = xcorr(x,y)</div>
+                            It returns the cross-correlation of two discrete-time sequences, x and y.
+                        </div>
+
+
+                        <!-- Stop edit here -->
+
+					</div>
+				</div>
+				<div class="subsection">
+					<div class="heading">1.5 Report Organization</div>
+					<div class="text">
+
+						<!-- Start edit here  -->
+						<!-- Stop edit here -->
+
+					</div>
+				</div>
+			</div>
+
+			<div class="section">
+				<div class="heading"></div>
+				<div class="text">
+
+					<!-- Start edit here  -->
+
+					<!-- Stop edit here -->
+
+				</div>
+			</div>
+
+			<div class="section">
+				<div class="heading">3. Experiments &amp; Results</div>
+				<div class="subsection">
+					<div class="heading">3.1 Dataset Description</div>
+					<div class="text">
+
+						<!-- Start edit here  -->
+						<!-- Stop edit here -->
+
+					</div>
+				</div>
+				<div class="subsection">
+					<div class="heading">3.2 Discussion</div>
+					<div class="text">
+
+						<!-- Start edit here  -->
+						<!-- Stop edit here -->
+
+					</div>
+				</div>
+			</div>
+
+			<div class="section">
+				<div class="heading">4. Conclusions</div>
+				<div class="subsection">
+					<div class="heading">4.1 Summary</div>
+					<div class="text">
+
+						<!-- Start edit here  -->
+						<!-- Stop edit here -->
+
+					</div>
+				</div>
+				<div class="subsection">
+					<div class="heading">4.2 Future Extensions</div>
+					<div class="text">
+
+						<!-- Start edit here  -->
+						<!-- Stop edit here -->
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+</html>
